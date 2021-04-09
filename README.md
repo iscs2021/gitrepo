@@ -6,7 +6,7 @@ The files in this repository were used to configure the network depicted below.
 
 These files have been tested and used to generate a live [ELK](https://www.elastic.co/what-is/elk-stack) deployment on [Azure](https://portal.azure.com). They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the **[ansible](https://www.ansible.com/overview/how-ansible-works)** playbook file may be used to install only certain pieces of it, such as Filebeat.
 
-  - [configvm.yaml](Ansible/Roles/configvm.yaml)
+  - [configvm.yaml](Ansible/roles/configvm.yaml)
 
 This document contains the following details:
 - [Description of the Topology](#description-of-the-topology)
