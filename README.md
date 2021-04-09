@@ -115,9 +115,8 @@ To specify on which machine to install the ELK server, edit the file `/etc/ansib
 To specify on which machine to install Filebeat, edit the file `/etc/ansible/files/filebeat-playbook.yml` on the **docker container** on the **jumpbox**, modifying the value after **hosts:**
 - To which URL do you navigate in order to check that the ELK server is running?  To check that the ELK server is running, navigate to `http://10.1.0.4:5601`  Note: The IP address is subject to change.
 
-As a **Bonus**, below I provide the specific commands the user will need to run to download the playbook, 
-_As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._
-Assuming the user is on a Windows PC, has GitBash, and has already copied SSL public keys to the appropriate places for access, and has used ssh to cnnect to the jump box, and suppose on in a docker container named **fire_snow**
+As a **Bonus**, below I provide the specific commands the user will need to run to ssh to the jump box, run docker service, start a docker container, edit a playbook, run a playbook, download the ansible directory to the jump box, download the ansible directory to a local PC.
+Assuming the user is on a local Windows PC, has GitBash installed, and has already copied SSL public keys to the appropriate places for access, and has used ssh to connect to the jump box, and suppose ansible can be run on a docker container named **fire_snow**
 
 - SSH from PC to the jump box
 ```
