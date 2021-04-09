@@ -107,7 +107,7 @@ SSH into the control node and follow the steps below:
 - [screenshot for successful filebeat install](Images/activity-13-2-filebeat-install-success.JPG)
 - [screenshot for successful metricbeat install](Images/activity-13-2-metricbeat-install-success.JPG)
 
-Additinal questions answered:
+Additional questions answered:
 - Which file is the playbook?  The playbooks are named `install-elk.yaml`, `filebeat-playbook.yml` and `metricbeat-playbook.yml`. 
 - Where do you copy the playbook?  The playbooks are copied to `/etc/ansible/files` on the **docker container** on the **jumpbox**.
 - Which file do you update to make Ansible run the playbook on a specific machine?  The `/etc/ansible/hosts` file is updated to run Ansible playbook on a specific machine.
