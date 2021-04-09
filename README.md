@@ -34,12 +34,12 @@ Note: The following table was created using the [Markdown Table Generator](http:
 
 | Name          | Function     | IP Address | Operation System       |
 |---------------|--------------|------------|------------------------|
-| Jump Box      | Gateway      | 10.0.0.4   | UbuntuServer 18.04-LTS |
+| Jump Box      | gateway      | 10.0.0.4   | UbuntuServer 18.04-LTS |
 | Web-1         | web server   | 10.0.0.5   | UbuntuServer 18.04-LTS |
 | Web-2         | web server   | 10.0.0.6   | UbuntuServer 18.04-LTS |
 | Web-3         | web server   | 10.0.0.7   | UbuntuServer 18.04-LTS |
 | Load Balancer | availability | 10.0.0.8   | Azure resource         |
-| ELKServer     | Monitoring   | 10.1.0.4   | UbuntuServer 18.04-LTS |
+| ELKServer     | monitoring   | 10.1.0.4   | UbuntuServer 18.04-LTS |
 
 ### Access Policies
 
@@ -59,8 +59,8 @@ A summary of the access policies in place can be found in the table below.
 | Web-1         | No                  | 10.1.0.4                           | 10.0.0.4, 10.1.0.4                   |
 | Web-2         | No                  | 10.1.0.4                           | 10.0.0.4, 10.1.0.4                   |
 | Web-3         | No                  | 10.1.0.4                           | 10.0.0.4, 10.1.0.4                   |
-| Load Balancer | Yes (http)          | 10.0.0.5, 10.0.0.6, 10.0.0.7       | my local ip                          |
-| ELKServer     | Yes (http)          | 10.0.0.5, 10.0.0.6, 10.0.0.7       | my local ip                          |
+| Load Balancer | No                  | 10.0.0.5, 10.0.0.6, 10.0.0.7       | my local ip                          |
+| ELKServer     | No                  | 10.0.0.5, 10.0.0.6, 10.0.0.7       | my local ip (http), jump box (ssh)   |
 
 ### ELK Configuration
 
@@ -94,7 +94,6 @@ Metricbeat monitors system performance info, wherein I expect to see CPU usage, 
 This ELK server is configured to monitor the following machines:
 - 10.0.0.5, 10.0.0.6, 10.0.0.7
 
-[//]: # (Using the Playbook)
 ### How to Use the Ansible Build
 In order to use the playbook for an Ansible Build, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
 
