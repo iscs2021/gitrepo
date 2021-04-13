@@ -86,9 +86,8 @@ We have installed the following Beats on these machines:
 - [Filebeat](https://www.elastic.co/guide/en/beats/filebeat/current/filebeat-overview.html) and [Metricbeat](https://www.elastic.co/guide/en/beats/metricbeat/current/metricbeat-overview.html)
 
 These Beats allow us to collect the following information from each [machine](#machines-being-monitored):
-- In 1-2 sentences, explain what kind of data each beat collects, and provide 1 example of what you expect to see. E.g., `Winlogbeat` collects Windows logs, which we use to track user logon events, etc.
-Filebeat monitors specific logs files for system and services, wherein I expect to see systemd, containerd, kernal, pythond log changes.
-Metricbeat monitors system performance info, wherein I expect to see CPU usage, memory usage, number of containers running.
+- Filebeat monitors specific logs files for system and services, wherein I expect to see systemd, containerd, kernal, pythond log changes.
+- Metricbeat monitors system performance info, wherein I expect to see CPU usage, memory usage, number of containers running.
 
 ### Machines Being Monitored
 This ELK server is configured to monitor the following machines:
